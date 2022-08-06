@@ -2,7 +2,7 @@ import { getProviders, signIn } from 'next-auth/react';
 import { useEffect } from 'react';
 
 const SignIn: React.FC<{ providers: any }> = ({ providers }) => {
-  let redirectUrl = 'http://location:3000';
+  let redirectUrl = 'http://localhost:3000';
 
   useEffect(() => {
     const url = new URL(location.href);
