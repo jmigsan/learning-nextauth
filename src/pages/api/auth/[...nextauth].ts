@@ -26,7 +26,8 @@ export const authOptions: NextAuthOptions = {
     // ...add more providers here
   ],
   pages: {
-    signIn: 'http://localhost:3000/auth/signin',
+    signIn:
+      'https://learning-nextauth-qgmow05xz-jmigsan.vercel.app/auth/signin',
   },
 };
 
