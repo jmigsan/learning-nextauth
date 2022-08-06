@@ -2,7 +2,7 @@ import { getProviders, signIn } from 'next-auth/react';
 import { useEffect } from 'react';
 
 const SignIn: React.FC<{ providers: any }> = ({ providers }) => {
-  let redirectUrl = 'https://learning-nextauth-qgmow05xz-jmigsan.vercel.app';
+  let redirectUrl = 'https://learning-nextauth.vercel.app/';
 
   useEffect(() => {
     const url = new URL(location.href);

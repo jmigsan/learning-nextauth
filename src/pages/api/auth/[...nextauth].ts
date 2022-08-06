@@ -26,8 +26,7 @@ export const authOptions: NextAuthOptions = {
     // ...add more providers here
   ],
   pages: {
-    signIn:
-      'https://learning-nextauth-qgmow05xz-jmigsan.vercel.app/auth/signin',
+    signIn: 'https://learning-nextauth.vercel.app/auth/signin',
   },
 };
 
