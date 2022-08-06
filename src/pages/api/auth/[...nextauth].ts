@@ -25,6 +25,9 @@ export const authOptions: NextAuthOptions = {
     }),
     // ...add more providers here
   ],
+  pages: {
+    signIn: 'http://localhost:3000/auth/signin',
+  },
 };
 
 export default NextAuth(authOptions);
