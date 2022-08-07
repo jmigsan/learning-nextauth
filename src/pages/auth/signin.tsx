@@ -16,7 +16,6 @@ const SignIn: React.FC<{ providers: any }> = ({ providers }) => {
         <div key={provider.name}>
           <Button
             onClick={() => signIn(provider.id, { callbackUrl: redirectUrl })}
-            p={3}
           >
             Sign in with {provider.name}
           </Button>
