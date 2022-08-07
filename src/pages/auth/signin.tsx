@@ -1,3 +1,4 @@
+import { Button } from '@chakra-ui/react';
 import { getProviders, signIn } from 'next-auth/react';
 import { useEffect } from 'react';
 
@@ -13,11 +14,11 @@ const SignIn: React.FC<{ providers: any }> = ({ providers }) => {
     <>
       {Object.values(providers).map((provider: any) => (
         <div key={provider.name}>
-          <button
+          <Button
             onClick={() => signIn(provider.id, { callbackUrl: redirectUrl })}
           >
             Sign in with {provider.name}
-          </button>
+          </Button>
         </div>
       ))}
     </>
